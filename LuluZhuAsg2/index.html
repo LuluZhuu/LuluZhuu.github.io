@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuluZhuAsg#2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1 id="headername">My Web Development and Programming WEBSITE</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../LuluZhuAsg1/contact.html">
+                    <li>Contact Form</li>
+                </a>
+                <a href="index.html">
+                    <li>Assignment #2</li>
+                </a>
+                <a href="../LuluZhuAsg3/index.html">
+                    <li>Assignment #3</li>
+                </a>
+                <a href="../LuluZhuAsg4/index.html">
+                    <li>Assignment #4</li>
+                </a>
+            </ul>
+            <ul>
+                <a href="../LuluZhuAsg5/index.html">
+                    <li>Assignment #5</li>
+                </a>
+                <a href="../LuluZhuAsg5/products.html">
+                    <li>Products</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div id="mainArea">
+            <div id="introTextContainer">
+                <p id="introText">
+                    Hi there! I'm Lulu Zhu. I currently major in Computer Science and Data Science at NYU, with a minor in Web Programming and Applications.
+                    The power of crafting user interfaces and experiences that seamlessly blend aesthetics and technology is a driving force behind my academic pursuits.
+                    As I delved deeper into this field, I discovered the immense impact that front-end development has on shaping the online world we interact with daily.
+                    With my passion for aesthetics, I aim to seamlessly integrate this interest with my major, 
+                    creating a harmonious blend that allows me to make a meaningful impact in the digital realm.
+                </p>
+            </div>
+            <button onclick="change1()">Change Style</button>
+        </div>
+
+        <div id="swapText">
+            <h2>Click any of the follwoing two paragraphs to swap their text and html content.</h2>
+                <p class=".col-75" onclick="swapT()" id="p1">Cascading Style Sheets (CSS) is a fundamental technology in web development. 
+                    It serves as the design language for web pages, allowing developers to control the layout, appearance, and presentation of HTML elements. 
+                    CSS enables the separation of content from design, making it easier to create visually appealing and responsive websites. 
+                    With CSS, you can set fonts, colors, margins, and more, ensuring consistency and a polished look across your site. 
+                    It operates on a cascade principle, where rules can be inherited, overridden, or combined to create complex styles. 
+                    Mastering CSS is essential for creating engaging and user-friendly web interfaces.
+                </p>
+            <p onclick="swapT()" id="p2">JavaScript (JS) is a versatile and powerful programming language that plays a pivotal role in web development. 
+                It empowers developers to create dynamic and interactive web applications by adding functionality to HTML and CSS. 
+                JavaScript is executed on the client-side, enabling real-time updates, user interactions, and data manipulation without the need for server requests. 
+                It's used for tasks ranging from form validation to building complex web applications and games. 
+                JavaScript's wide adoption and extensive libraries, such as React and Angular, make it a must-learn language for web developers. 
+                With JS, you can bring your web projects to life, making them more engaging and responsive to user input.
+            </p>
+        </div>
+
+
+        <div id="swapImage">
+            <h2>Click on any of the image below to swap images.</h2>
+            <img src="images/CSSlogo.png" id="img1" onclick="swapImg()" width="180px" height="200px">
+            <img src="images/js.png" id="img2" onclick="swapImg()" width="200px" height="200px">
+        </div>
+
+        <div class="footer">
+            © 2023 Lulu Zhu
+            <p>Social media accounts below. Click to connect please!</p>
+            <section id="socialMedia">
+                <a href="https://www.instagram.com/luluzhu2004/" target="_blank"><img src="images/instagram.svg" width="30px" height="30px"/></a>
+                <a href="https://www.linkedin.com/in/lulu-zhu-276bb9273/" target="_blank"><img src="images/linkedin.svg" width="30px" height="'30px"/></a>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/asg2.js"></script>
+</body>
+</html>

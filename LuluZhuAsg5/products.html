@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuluZhuAsg#5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1 id="headername">My Web Development and Programming WEBSITE</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../LuluZhuAsg1/contact.html">
+                    <li>Contact Form</li>
+                </a>
+                <a href="../LuluZhuAsg2/index.html">
+                    <li>Assignment #2</li>
+                </a>
+                <a href="../LuluZhuAsg3/index.html">
+                    <li>Assignment #3</li>
+                </a>
+                <a href="../LuluZhuAsg4/index.html">
+                    <li>Assignment #4</li>
+                </a>
+                <!-- <a href="index.html">
+                    <li>Assignment #5</li>
+                </a> -->
+            </ul>
+            <ul>
+                <a href="index.html">
+                    <li>Assignment #5</li>
+                </a>
+                <a href="products.html">
+                    <li>Products</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div id="instruction">
+            <h2 class="title">Buy your Concert Tickets</h2>
+            <p>Please choose the number of tickets you want to buy, then the subtotal and total will be displayed.</p>
+            <p>Then enter your information, click checkout to see your receipt.</p>
+        </div>
+
+
+
+        <form id="cartForm">
+            <div id="eason">
+                <div class="col-40">
+                    <p class="concertTitle">Eason Chan's Concert: 200$</p>
+                </div>
+                <div class="col-60">
+                    <img src="images/eason.jpeg" class="concertImage">
+                </div>
+                <div class="input">
+                    <label for="numberEason"> Quantity Ordered: </label>
+                    <input type="number" name="numberEason" id="numberEason">
+                    <label for="subtotalEason">Subtotal: </label>
+                    <input readonly type=number name="subtotalEason" id="subtotalEason">
+                </div>
+            </div>
+
+            <div id="jay">
+                <div class="col-40">
+                    <p class="concertTitle">Jay Chou's Concert: 200$</p>
+                </div>
+                <div class="col-60">
+                    <img src="images/jay.jpeg" class="concertImage">
+                </div>
+                <div class="input">
+                    <label for="numberJay"> Quantity Ordered: </label>
+                    <input type="number" name="numberJay" id="numberJay">
+                    <label for="subtotalJay">Subtotal: </label>
+                    <input readonly type=number name="subtotalJay" id="subtotalJay">
+                </div>
+            </div>
+
+            <div id="grand">
+                <label for="grandtotal">Grand Total:</label>
+                <input readonly type="number" id="grandtotal" name="grandtotal">
+            </div>
+
+            <div id="checkout">
+                <h2 class="title">Check out</h2>
+                <label for="shipping">Shipping Method: </label>
+                <select name="shipping" id="shipping">
+                    <option value="will-call">Will-Call</option>
+                    <option value="shipping">Shipping</option>
+                </select>
+                <label for="shippingAmount">Shipping Amount: </label>
+                <input type="text" name="shippingAmount" id="shippingAmount"><br>
+
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"><br>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone"><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="address">Address: </label>
+                <input type="text" name="address" id="address"><br>
+                <label for="ZipCode">ZIP Code:  </label>
+                <input type="text" name="ZipCode" id="ZipCode"><br>
+
+                <p style="font-family: Crimson; font-size: 18pt;">Enter Credit Card Information: </p>
+                <label for="creditCardName">Credit Card Name: </label>
+                <input type="text" name="creditCardName" id="creditCardName"><br>
+                <label for="cardNumber">Credit Card Number: </label>
+                <input type="text" name="cardNumber" id="creditNumber"><br>
+                <label for="cvv">CVV: </label>
+                <input type="text" name="cvv" id="cvv" maxLength="3"><br>
+                <label for="expDate">Expiration Date: </label>
+                <input type="text" name="expDate" id="expDate" placeholder="MM/YY"><br>
+                <input type="submit" value="checkout" class="button">
+                <input type="reset" value="reset" class="button">
+                
+            </div>
+        </form>
+
+
+
+
+
+        <!-- <form id="cartForm">
+            <div id="eason">
+                <div class="input">
+                    <div class="col-40">
+                        <p class="concertTitle">Eason Chan's Concert: 200$</p>
+                    </div>
+                    <div class="col-60">
+                        <img src="images/eason.jpeg" class="concertImage">
+                    </div>
+                    <label for="numberEason"> Quantity Ordered: </label>
+                    <input type="number" name="numberEason" id="numberEason">
+                    <label for="subtotalEason">Subtotal: </label>
+                    <input readonly type=number name="subtotalEason" id="subtotalEason">
+                </div>
+            </div>
+
+            <div id="jay">
+                <div class="col-40">
+                    <p class="concertTitle">Jay Chou's Concert: 200$</p>
+                </div>
+                <div class="col-60">
+                    <img src="images/jay.jpeg" class="concertImage">
+                </div>
+                <div class="input">
+                    <label for="numberJay"> Quantity Ordered: </label>
+                    <input type="number" name="numberJay" id="numberJay">
+                    <label for="subtotalJay">Subtotal: </label>
+                    <input readonly type=number name="subtotalJay" id="subtotalJay">
+                </div>
+            </div>
+
+            <div id="grand">
+                <label for="grandtotal">Grand Total:</label>
+                <input readonly type="number" name="grandtotal">
+            </div>
+
+            <div id="checkout">
+                <h2 class="title">Check out</h2>
+                <label for="shipping">Shipping Method: </label>
+                <select name="shipping" id="shipping">
+                    <option value="will-call">Will-Call</option>
+                    <option value="shipping">Shipping</option>
+                </select>
+                <label for="shippingAmount">Shipping Amount: </label>
+                <input type="text" name="shippingAmount" id="shippingAmount"><br>
+
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"><br>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone"><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="address">Address: </label>
+                <input type="text" name="address" id="address"><br>
+
+                <p style="font-family: Crimson; font-size: 18pt;">Enter Credit Card Information: </p>
+                <label for="creditCardName">Credit Card Name: </label>
+                <input type="text" name="creditCardName" id="creditCardName"><br>
+                <label for="cardNumber">Credit Card Number: </label>
+                <input type="text" name="cardNumber" id="creditNumber"><br>
+                <label for="cvv">CVV: </label>
+                <input type="text" name="cvv" id="cvv" maxLength="3"><br>
+                <label for="expDate">Expiration Date: </label>
+                <input type="text" name="expDate" id="expDate" placeholder="MM/YY"><br>
+                <input type="submit" value="checkout" class="button">
+                <input type="reset" value="reset" class="button">
+                
+            </div>
+        </form> -->
+
+
+        <div class="footer">
+            © 2023 Lulu Zhu
+            <p>Social media accounts below. Click to connect please!</p>
+            <section id="socialMedia">
+                <a href="https://www.instagram.com/luluzhu2004/" target="_blank"><img src="images/instagram.svg" width="30px" height="30px"/></a>
+                <a href="https://www.linkedin.com/in/lulu-zhu-276bb9273/" target="_blank"><img src="images/linkedin.svg" width="30px" height="'30px"/></a>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/asg5cart.js"></script>
+</body>
+</html>

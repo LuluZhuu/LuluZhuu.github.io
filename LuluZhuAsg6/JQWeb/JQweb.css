@@ -1,0 +1,67 @@
+@font-face{
+    font-family:Wonderface;
+    src:url("../fonts/WONDER\ SEASON.ttf");
+}
+
+@font-face{
+    font-family:Cardo;
+    src:url("../fonts/Cardo-Regular.ttf");
+}
+
+@font-face{
+    font-family:Kaushan;
+    src:url("../fonts/Kaushan.ttf");
+}
+
+body {
+	/* background-color: #edeec9; */
+    background-image: url(cat2.jpg);
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav {
+	font-family:  sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	white-space: nowrap;
+    font-family:Wonderface;
+}
+
+
+
+.links, .selected {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+    color: #f4d06f;
+}
+
+.header {
+    color: #f4d06f;
+    font-family:Kaushan;
+	font-size: 52pt;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	margin-bottom: 60px;
+    text-decoration: none;
+
+}
+
+p {
+	font-family: Cardo;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: beige
+}
+
+video {
+	width: 100%;
+}
+
+.mainContent {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
